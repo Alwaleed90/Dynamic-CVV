@@ -34,32 +34,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   
- // script.js
-
-document.addEventListener("DOMContentLoaded", function () {
-  // إعداد EmailJS بمفتاحك العام
-  emailjs.init("DprpJyAkzXqUhB8B9"); // استبدل YOUR_PUBLIC_KEY بالمفتاح الحقيقي من لوحة التحكم
-
-  const form = document.getElementById("contact-form");
-  const status = document.getElementById("form-status");
-
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    emailjs
-      .sendForm("service_x947t47", "template_ytvdkwj", form)
-      .then(
-        () => {
-          status.textContent = "✔️ Message sent successfully!";
-          status.style.color = "green";
-          form.reset();
-        },
-        (error) => {
-          console.error("Send failed", error);
-          status.textContent = "❌ Send failed. Try again.";
-          status.style.color = "red";
-        }
-      );
-  });
-});
-
