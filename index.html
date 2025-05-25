@@ -46,31 +46,34 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       <strong>Join us today to be part of tomorrow’s security standard.</strong>
     </p>
   </section>
-  
+
   <section id="overview" class="section">
     <h2>About the Idea</h2>
     <p>Traditional cards print static CVV codes. Once a fraudster sees or clones the card, they can use it endlessly online. Dynamic CVV eliminates this risk by generating temporary CVVs via the bank app or secure token, expiring after minutes or hours. No CVV is printed on the card.</p>
   </section>
-  
-   <section id="how-it-works" class="section">
-    <h2>How It Works</h2><section>
-    <section class="section steps">
-    <div class="step">
-            
-      <h3>Step 1</h3>
-      <p>User requests CVV through bank or app.</p>
-    </div>
-    <div class="step">
-      <h3>Step 2</h3>
-      <p>App generates temporary CVV valid for limited time.</p>
-    </div>
-    <div class="step">
-      <h3>Step 3</h3>
-      <p>Code disappears or regenerates (hourly/daily).</p>
-    </div>
-    <div class="step">
-      <h3>Step 4</h3>
-      <p>No CVV printed on card – reduces cloning & fraud.</p>
+
+  <section id="problem-solution" class="section">
+    <h2>🔒 The Problem & Our Solution</h2>
+    <p><strong>The Problem:</strong> Static CVV codes on credit cards are vulnerable to theft and online fraud.</p>
+    <p><strong>The Solution:</strong> Dynamic CVV – replaces static CVV with a temporary code generated in real-time through your bank’s app or secure channel, valid only for one transaction or limited time.</p>
+  </section>
+
+  <section id="how-it-works-extended" class="section">
+    <h2>⚙️ How It Works (Detailed)</h2>
+    <ul class="steps">
+      <li>User attempts to make an online purchase.</li>
+      <li>CVV field appears empty on the card.</li>
+      <li>System requests a one-time CVV via the bank’s app/SMS.</li>
+      <li>Bank generates a secure, temporary CVV and sends it to the user.</li>
+      <li>User inputs the CVV and completes the purchase.</li>
+    </ul>
+  </section>
+
+  <section id="screenshots" class="section">
+    <h2>App Interface & Card Example</h2>
+    <div class="screenshots">
+      <img src="img/1.png" alt="App showing CVV code" />
+      <img src="img/2.png" alt="Card with no CVV printed" />
     </div>
   </section>
 
@@ -85,14 +88,6 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     </ul>
   </section>
 
-  <section id="screenshots" class="section">
-    <h2>App Interface & Card Example</h2>
-    <div class="screenshots">
-      <img src="img/1.png" alt="App showing CVV code" />
-      <img src="img/2.png" alt="Card with no CVV printed" />
-    </div>
-  </section>
-
   <section id="vision2030" class="section">
     <h2>Vision & Alignment with Saudi Vision 2030</h2>
     <p>Dynamic CVV supports financial innovation, digital trust, and secure e-transactions — critical pillars in Vision 2030's digital transformation roadmap.</p>
@@ -103,8 +98,10 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     </ul>
   </section>
 
-  <section id="revenue" class="section">
-    <h2>Revenue Model</h2>
+  <section id="revenue-model" class="section">
+    <h2>💰 Revenue Model</h2>
+    <p>We plan to license our Dynamic CVV technology to banks and fintech providers as a cybersecurity add-on for online payments.</p>
+    <p>Pricing models may include setup fee + annual licensing, or per-transaction API usage.</p>
     <ul>
       <li>B2B licensing for banks (annual/monthly)</li>
       <li>Custom API integration packages</li>
@@ -116,6 +113,42 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   <section id="risks" class="section">
     <h2>Risks & Mitigation</h2>
     <p>Risks include integration delays, user adoption friction, and system spoofing attempts. We mitigate via strong encryption, UX design, and support models.</p>
+  </section>
+
+  <section id="security-compliance" class="section">
+    <h2>🛡️ Security & Compliance</h2>
+    <ul>
+      <li>Complies with PCI-DSS payment card standards.</li>
+      <li>End-to-end encryption of dynamic code generation.</li>
+      <li>Temporarily valid CVVs prevent reuse or replay attacks.</li>
+      <li>Can integrate with national cybersecurity frameworks like Saudi’s NCA.</li>
+    </ul>
+  </section>
+
+  <section id="execution" class="section">
+    <h2>Execution Plan</h2>
+    <ol>
+      <li>Prototype app with time-based CVV generator</li>
+      <li>Secure partnerships with local banks</li>
+      <li>Develop API connectors for core banking systems</li>
+      <li>Launch pilot and collect analytics</li>
+      <li>Scale nationally and globally</li>
+    </ol>
+  </section>
+
+  <section id="market-opportunity" class="section">
+    <h2>🌍 Market Opportunity</h2>
+    <p>The GCC region processes millions of online transactions daily. With rising cyber fraud cases, banks are actively seeking new security solutions. Dynamic CVV is a timely answer.</p>
+    <p>Initial target: Top banks and fintechs in Saudi Arabia. Long term: global licensing to card issuers and digital wallets.</p>
+  </section>
+
+  <section id="competitive-advantage" class="section">
+    <h2>🚀 Competitive Advantage</h2>
+    <ul>
+      <li>Unlike tokenization, CVV stays under user control via trusted channels.</li>
+      <li>No hardware needed – software-only implementation.</li>
+      <li>Zero disruption to payment flow – user-friendly and secure.</li>
+    </ul>
   </section>
 
   <section id="comparison" class="section">
@@ -153,24 +186,22 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     </table>
   </section>
 
-  <section id="execution" class="section">
-    <h2>Execution Plan</h2>
-    <ol>
-      <li>Prototype app with time-based CVV generator</li>
-      <li>Secure partnerships with local banks</li>
-      <li>Develop API connectors for core banking systems</li>
-      <li>Launch pilot and collect analytics</li>
-      <li>Scale nationally and globally</li>
-    </ol>
+
+  <section id="roadmap" class="section">
+    <h2>📅 Roadmap</h2>
+    <ul>
+      <li>✔️ Idea and documentation completed</li>
+      <li>✔️ Legal preparation and pitch deck</li>
+      <li>🔜 Seek technical partner and develop MVP</li>
+      <li>🔜 Pilot with local bank</li>
+      <li>🔜 Expand to GCC banks and card networks</li>
+    </ul>
   </section>
 
-  <section id="scenarios" class="section">
-    <h2>Use Cases & Scenarios</h2>
-    <ul>
-      <li>Online purchases with time-sensitive CVV</li>
-      <li>Cross-border e-commerce protection</li>
-      <li>Secure in-app bank payments</li>
-    </ul>
+  <section id="team" class="section">
+    <h2>👤 Founder & Team</h2>
+    <p><strong>Founder:</strong> Alwaleed Khalid Alanazi – Systems Engineer with cybersecurity vision. Currently solo founder with a clear concept, ready to partner with tech and banking experts.</p>
+    <p><strong>Need:</strong> Tech co-founder, legal advisor, and early adopter bank partner.</p>
   </section>
 
   <section id="faq" class="section">
@@ -192,7 +223,16 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       <p>Yes, it removes the printed CVV. No hardware change required.</p>
     </details>
   </section>
-  
+
+  <section id="investment-call" class="section">
+    <h2>📣 What We’re Looking For</h2>
+    <ul>
+      <li>Seed funding to build MVP and secure legal/IP protection.</li>
+      <li>Pilot program with Saudi banks or fintechs.</li>
+      <li>Strategic partners in cybersecurity and banking sector.</li>
+    </ul>
+  </section>
+
   <section id="whatsapp-contact" style="display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh; background-color: #f5faff; text-align: center;">
     <h2 style="font-size: 2rem; color: #003366;">📞 Contact us directly</h2>
     <p style="font-size: 1.1rem; margin-bottom: 20px; color: #333;">Do you have a quick inquiry? Contact us directly on WhatsApp:</p>
@@ -215,14 +255,13 @@ box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     >
       💬 Contact via WhatsApp: +966531333133
     </a>
-  </section>  
-  
+  </section>
+
   <footer class="footer">
-    <p>&copy; 2025 Dynamic CVV. All rights reserved. Powered by secure innovation.</p>
+    <p>&copy; 2025 Dynamic CVV. All rights reserved. Powered by Alwaleed Khalid.</p>
   </footer>
 
   <script src="scripts.js"></script>
-  <!-- ضعه داخل <head> أو قبل نهاية <body> -->
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </body>
 </html>
